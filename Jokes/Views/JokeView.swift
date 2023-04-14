@@ -20,6 +20,9 @@ struct JokeView: View {
     var body: some View {
         NavigationView{
             VStack{
+                Spacer()
+                
+                
                 
                 if let currentJoke = currentJoke{
                     
@@ -45,6 +48,23 @@ struct JokeView: View {
                     ProgressView()
                     
                 }
+                Spacer()
+                Button(action: {
+                    // Reset the interface
+                    punchlineOpacity = 0.0
+
+                    Task {
+                        // Get another joke
+                        withAnimation {
+                            currentJoke = nil
+                        }
+                        currentJoke = await NetworkService.fetch()
+                    }
+                }, label: {
+                    Text("Fetch another one")
+                })
+                .disabled(punchlineOpacity == 0.0 ? true : false)
+                .buttonStyle(.borderedProminent)
             }
             .navigationTitle("Random Jokes")
         }
@@ -53,11 +73,14 @@ struct JokeView: View {
         }
     }
     
-    struct JokeView_Previews: PreviewProvider {
-        static var previews: some View {
-            
-            JokeView()
-            
-        }
+    
+}
+
+
+struct JokeView_Previews: PreviewProvider {
+    static var previews: some View {
+        
+        JokeView()
+        
     }
 }
