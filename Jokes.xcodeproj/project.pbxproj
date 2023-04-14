@@ -11,6 +11,7 @@
 		DFD26DDE29E9A4D600F62017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD26DDD29E9A4D600F62017 /* Assets.xcassets */; };
 		DFD26DE129E9A4D600F62017 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD26DE029E9A4D600F62017 /* Preview Assets.xcassets */; };
 		DFD26DE929E9A5AF00F62017 /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD26DE829E9A5AF00F62017 /* JokeView.swift */; };
+		DFD26DEC29E9A8D200F62017 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD26DEB29E9A8D200F62017 /* Joke.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		DFD26DDD29E9A4D600F62017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFD26DE029E9A4D600F62017 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DFD26DE829E9A5AF00F62017 /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
+		DFD26DEB29E9A8D200F62017 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				DFD26DD929E9A4D300F62017 /* JokesApp.swift */,
+				DFD26DEA29E9A87C00F62017 /* Model */,
 				DFD26DE729E9A59B00F62017 /* Views */,
 				DFD26DDD29E9A4D600F62017 /* Assets.xcassets */,
 				DFD26DDF29E9A4D600F62017 /* Preview Content */,
@@ -73,6 +76,14 @@
 				DFD26DE829E9A5AF00F62017 /* JokeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DFD26DEA29E9A87C00F62017 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFD26DEB29E9A8D200F62017 /* Joke.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				DFD26DDA29E9A4D300F62017 /* JokesApp.swift in Sources */,
 				DFD26DE929E9A5AF00F62017 /* JokeView.swift in Sources */,
+				DFD26DEC29E9A8D200F62017 /* Joke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
